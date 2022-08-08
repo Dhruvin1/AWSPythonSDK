@@ -1,7 +1,6 @@
 
-# Welcome to your CDK Python project!
+# Deploy VPC with one private and public subnet using AWS Python SDK and CloudFormation
 
-This is a blank project for CDK development with Python.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -55,4 +54,12 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
+- install cdk
+  npm install -g aws-cdk@latest
+  cdk version
+- initialize project
+  cdk init app --language python
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  * add vpc resources to the *stack.py
+  * first time needs to be bootstrapped cdk bootstrap aws://ACCOUNT-NUMBER/REGION
